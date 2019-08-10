@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="">
+  <para>Simpel Api Dengan Code igniter</para>
+  <para/>
+  <para>file dump_db : database.sql</para>
+  <para/>
+  <para>Token : [token =&gt; ‘1234567890]</para>
+  <para/>
+  <informaltable frame="all">
+    <tgroup cols="5"><tbody><row><entry><para>Nama Url</para></entry><entry><para>Create</para></entry><entry><para>Update</para></entry><entry><para>Delete</para></entry><entry><para>Read</para></entry></row><row><entry><para>/produk</para></entry><entry><para>true</para></entry><entry><para>true</para></entry><entry><para>true</para></entry><entry><para>true</para></entry></row><row><entry><para>/category</para></entry><entry><para>True</para></entry><entry><para>True</para></entry><entry><para>True</para></entry><entry><para>true</para></entry></row><row><entry><para>/banner</para></entry><entry><para>False</para></entry><entry><para>True</para></entry><entry><para>False</para></entry><entry><para>true</para></entry></row><row><entry><para>/user</para></entry><entry><para>False</para></entry><entry><para>False</para></entry><entry><para>False</para></entry><entry><para>true</para></entry></row></tbody></tgroup>
+  </informaltable>
+  <para/>
+  <para/>
+  <para>/produk [GET]</para>
+  <informaltable frame="all">
+    <tgroup cols="3"><tbody><row><entry><para>Parameter</para></entry><entry><para>Fungsi</para></entry><entry><para>Wajib</para></entry></row><row><entry><para>Token</para></entry><entry><para>Token Api</para></entry><entry><para>True</para></entry></row><row><entry><para>q</para></entry><entry><para>Filter Pencarian Like nama produk</para></entry><entry><para>false</para></entry></row><row><entry><para>categori</para></entry><entry><para>Filter menampilkan produk berdasarkan kategori_id</para></entry><entry><para>false</para></entry></row><row><entry><para>halal</para></entry><entry><para>Filter menampilkan produk berdasarkan halal/non halal</para></entry><entry><para>false</para></entry></row><row><entry><para>order</para></entry><entry><para>Mengurutkan data berdasarkan (ASC/DESC)</para></entry><entry><para>false</para></entry></row><row><entry><para>limit &amp; start</para></entry><entry><para>Paggination pada menampilkan produk</para></entry><entry><para>false</para></entry></row><row><entry><para>Id</para></entry><entry><para>Digunakan untuk menampilkan detail berdasarkan id</para></entry><entry><para>false</para></entry></row></tbody></tgroup>
+  </informaltable>
+  <para/>
+  <para>/produk [POST] (application/x-www-form-urlencoded)</para>
+  <informaltable frame="all">
+    <tgroup cols="3"><tbody><row><entry><para>Parameter/input</para></entry><entry><para>Fungsi</para></entry><entry><para>Wajib</para></entry></row><row><entry><para>token</para></entry><entry><para>Token api</para></entry><entry><para>True</para></entry></row><row><entry><para>kategori_id</para></entry><entry><para>Form Input</para></entry><entry><para>true</para></entry></row><row><entry><para>user_id</para></entry><entry><para>Form Input</para></entry><entry><para>true</para></entry></row><row><entry><para>nama_produk</para></entry><entry><para>Form Input</para></entry><entry><para>true</para></entry></row><row><entry><para>harga</para></entry><entry><para>Form Input</para></entry><entry><para>true</para></entry></row><row><entry><para>deskripsi</para></entry><entry><para>Form Input</para></entry><entry><para>true</para></entry></row><row><entry><para>foto</para></entry><entry><para>Form Input</para></entry><entry><para>true</para></entry></row><row><entry><para>berat</para></entry><entry><para>Form Input</para></entry><entry><para>true</para></entry></row><row><entry><para>halal</para></entry><entry><para>Form Input</para></entry><entry><para>true</para></entry></row></tbody></tgroup>
+  </informaltable>
+  <para/>
+  <para>/produk [PUT] (application/x-www-form-urlencoded)</para>
+  <para>→ Sama dengan post </para>
+  <para>→ namabah |id|form input|true</para>
+  <para>/produk [DELETE] (application/x-www-form-urlencoded)</para>
+  <informaltable frame="all">
+    <tgroup cols="3"><tbody><row><entry><para>token</para></entry><entry><para>Token api</para></entry><entry><para>true</para></entry></row><row><entry><para>id</para></entry><entry><para>Id produk</para></entry><entry><para>true</para></entry></row></tbody></tgroup>
+  </informaltable>
+  <para/>
+</article>
